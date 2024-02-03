@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrainerTraineeApp.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrainerTraineeApp.Organization">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrainerTraineeApp.Trainer">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Trainings" Type="TrainerTraineeApp.Training">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.713" Y="0.248" Height="0.182" Width="0.944" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheOrganization" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Trainees" />
+      <Property Name="Trainings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Trainee">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheTrainer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Trainings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Training">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAIAAAACAACAAAAAAAAEAAAAAgAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheTrainer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Trainees" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Course">
+    <Position X="6.25" Y="5" Width="1.5" />
+    <AssociationLine Name="Trainings" Type="TrainerTraineeApp.Training">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.55" Y="0.227" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Trainings" />
+      <Property Name="Modules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Module">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Units" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Unit">
+    <Position X="9.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Topics" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrainerTraineeApp.Topic">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

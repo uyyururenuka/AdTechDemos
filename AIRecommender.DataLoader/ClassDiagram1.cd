@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AIRecommender.DataLoader.Book">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAABAAAiQAAAAAAAAAAQAgAAAIAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="BookUserRatings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AIRecommender.DataLoader.BookDetails">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Books" Type="AIRecommender.DataLoader.Book" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="2.5" />
+        <Point X="6.5" Y="1.411" />
+        <Point X="4" Y="1.411" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BookDetails.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Books" />
+      <Property Name="BookUserRatings" />
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AIRecommender.DataLoader.BookUserRating">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAABAAAAAAAgAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>BookUserRating.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AIRecommender.DataLoader.User">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAIAEAAAAgAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="BookUserRatings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AIRecommender.DataLoader.CSVDataLoader">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CSVDataLoader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.272" Collapsed="true" />
+  </Class>
+  <Interface Name="AIRecommender.DataLoader.IDataLoader">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDataLoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
